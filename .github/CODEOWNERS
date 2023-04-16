@@ -1,4 +1,4 @@
-- @jshernandez05
-  _.js @jshernandez05
-  _.yml @jshernandez05
+* @jshernandez05
+ *.js @jshernandez05
+  *.yml @marstwo2
   /public/ @jshernandez05
