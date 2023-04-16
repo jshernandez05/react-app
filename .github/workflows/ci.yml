@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [develop]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # Install Dependencies
+      - uses: actions/checkout@v3
+      - name: Use NodeJS
+        uses: actions/setup-node@v1
+        with:
+          node-version: "12.x"
+      - run: npm ci
+      # Check Code Formatting
+      - run: npm run format:check
+      # Run Automated Tests
+      - run: npm test -- --coverage
+        env:
+          CI: true
