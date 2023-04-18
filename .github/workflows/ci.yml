@@ -67,6 +67,6 @@ jobs:
         run: npx surge --project ./build --domain delirious-scarf.surge.sh
       - name: Upload Coverage Reports
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-        run: npx code-coverage
+        run: npx codecov
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
