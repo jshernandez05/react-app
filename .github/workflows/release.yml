@@ -7,8 +7,6 @@ on:
 jobs:
   slack-message:
     runs-on: ubuntu-latest
-    permissions:
-      pull-requests: read
     steps:
       - name: Slack Message
         run: |
