@@ -5,12 +5,6 @@ module.exports = {
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
     [
-      "@semantic-release/exec",
-      {
-        prepareCmd: "./my-build-script.sh ${nextRelease.version}"
-      }
-    ],
-    [
       "@semantic-release/github",
       {
         assets: [
