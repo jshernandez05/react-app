@@ -9,11 +9,7 @@ module.exports = {
       {
         assets: [
           { path: "build.zip", label: "Build" },
-<<<<<<< HEAD
-          { path: "coverage.zip", label: "Build" }
-=======
           { path: "coverage.zip", label: "Coverage" }
->>>>>>> main
         ]
       }
     ]
