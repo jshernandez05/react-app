@@ -1494,9 +1494,10 @@ const core = __webpack_require__(470);
 const github = __webpack_require__(469);
 
 try {
-  // throw new Error("some error message");
+  //   throw new Error("some error message");
+
   const name = core.getInput("who-to-greet");
-  console.log("Hello ${name}");
+  console.log(`Hello ${name}`);
 
   const time = new Date();
   core.setOutput("time", time.toTimeString());
