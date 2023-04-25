@@ -10,10 +10,9 @@ async function run() {
 
     const octokit = new github.getOctokit(token);
 
-    const response = await octokit.issues.create({
+    const response = await octokit.Issue.Create({
       // owner: github.context.repo.owner,
       // repo: github.context.repo.repo,
-      ...github.context.repo,
       title,
       body,
       assignees: assignees ? assignees.split("\n") : undefined
