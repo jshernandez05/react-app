@@ -1,5 +1,11 @@
 #!/bin/sh -l
 
+## used to throw an error based on conditional
+# if [ true ]
+# then
+#   echo 'error'
+#   exit 1
+# fi
 
 echo "::debug ::Debug Message"
 echo "::warning ::Warning Message"
@@ -15,3 +21,6 @@ echo 'some stuff'
 echo 'some stuff'
 echo 'some stuff'
 echo '::endgroup::'
+
+# Replacement for set-env
+echo "HELLO=hello" >> $GITHUB_ENV
