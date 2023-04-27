@@ -11,7 +11,7 @@ time=$(date)
 echo "::set-output name=time::$time"
 
 echo "::group::Some expandable logs"
-echo 'some stuff"
+echo 'some stuff'
 echo 'some stuff'
 echo 'some stuff'
 echo '::endgroup::'
