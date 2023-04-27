@@ -1,0 +1,18 @@
+name: Hello World
+author: J.Hernandez
+description: Simple JS Action
+inputs:
+  who-to-greet:
+    description: "Who to greet"
+    required: true
+    default: Joe
+outputs:
+  time:
+    description: "The greeting time"
+runs:
+  using: "docker"
+  image: "Dockerfile" # can also be an image url docker://oooooeee
+  # entrypoint:
+  args: # passed to the entrypoint
+    - ${{ inputs.who-to-greet }}
+
