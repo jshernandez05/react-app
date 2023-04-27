@@ -15,5 +15,3 @@ echo 'some stuff'
 echo 'some stuff'
 echo 'some stuff'
 echo '::endgroup::'
-
-echo '::set-env name=HELLO::hello'
